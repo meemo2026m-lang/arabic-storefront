@@ -1,0 +1,20 @@
+# انسخ هذا الملف إلى .env في جذر المشروع. لا ترفع .env إلى Git.
+# Project ref: lafkyrcmvtedhfxbrmuo | Region: eu-west-2
+SUPABASE_URL=https://lafkyrcmvtedhfxbrmuo.supabase.co
+
+# آمن عرضه في الواجهة فقط إذا احتجت Supabase Auth أو Realtime في المتصفح.
+SUPABASE_PUBLISHABLE_KEY=PASTE_YOUR_PUBLISHABLE_KEY_HERE
+
+# المستخدمون الذين تنشئهم وتؤكدهم في Supabase Authentication → Users يمكنهم
+# الدخول مباشرة. لا يلزم تحديد عناوين بريد هنا.
+
+# سر داخلي لتوقيع جلسة المتجر؛ أنشئ قيمة عشوائية طويلة ولا تستخدم كلمة مرور Supabase هنا.
+JWT_SECRET=GENERATE_A_LONG_RANDOM_VALUE_HERE
+
+# مفتاح خادمي فقط: لا يبدأ بـ VITE_ ولا يوضع في client/ أو Git.
+SUPABASE_SERVICE_ROLE_KEY=PASTE_A_NEWLY_ROTATED_SERVICE_ROLE_KEY_HERE
+
+# يحصل عليه من: Supabase Dashboard > Connect > ORMs > Node.js.
+# استخدم Session pooler (المنفذ 5432) للتطبيق، مع sslmode=require.
+# لا يمكن إنشاء هذا الرابط من API keys؛ كلمة مرور قاعدة البيانات مطلوبة.
+DATABASE_URL=postgresql://postgres.PROJECT_REF:YOUR_DATABASE_PASSWORD@aws-0-eu-west-2.pooler.supabase.com:5432/postgres?sslmode=require

@@ -1,0 +1,15 @@
+# انسخ هذه القيم يدوياً إلى ملف .env في جذر المشروع المحلي ثم استبدل الحقول الإلزامية.
+NODE_ENV=production
+HOST=0.0.0.0
+PORT=3000
+
+# قاعدة MySQL محلية في الجهاز الرئيسي أو خادم الشبكة.
+DATABASE_URL=mysql://erp_user:CHANGE_THIS_PASSWORD@127.0.0.1:3306/erp_local
+
+# أنشئ قيمة عشوائية طويلة وفريدة لكل تثبيت محلي.
+JWT_SECRET=CHANGE_THIS_TO_A_LONG_RANDOM_SECRET
+
+# تبقى هذه الإعدادات مطلوبة لمسار الدخول المرتبط بمزود الحساب الحالي.
+VITE_APP_ID=
+OAUTH_SERVER_URL=
+VITE_OAUTH_PORTAL_URL=

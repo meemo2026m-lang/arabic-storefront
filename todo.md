@@ -1,0 +1,81 @@
+# Project TODO
+
+- [x] Configure the application shell for native Arabic RTL direction and Cairo typography.
+- [x] Define database models for categories and products, with relational validation.
+- [x] Apply a safe database migration for the product catalog schema.
+- [x] Add public catalog procedures for listing categories, product cards, and product details.
+- [x] Create controlled Arabic demo categories and product catalog records without reviews or ratings.
+- [x] Build the refined Arabic storefront navigation with search and cart trigger.
+- [x] Build an offer-focused welcome banner using the supplied reference design language.
+- [x] Build responsive category filtering and searchable product-card grid.
+- [x] Build an Arabic product-detail view with quantity selector and cart action.
+- [x] Build a slide-in RTL cart drawer with quantity editing, removal, and live order total.
+- [x] Ensure all interactive controls provide appropriate feedback and keyboard accessibility.
+- [x] Add unit tests covering catalog querying and cart total behavior.
+- [x] Verify desktop and mobile layouts visually and resolve console or type errors.
+- [x] Save a final project checkpoint with all completed tasks recorded.
+- [x] Add real catalog-query tests for listing, filtering, and product-detail lookup.
+- [x] Replace the public storefront shell with a dense Arabic ERP desktop layout matching the supplied reference hierarchy.
+- [x] Build the deep-blue system header, compact module toolbar, status footer, and right-side quick-actions rail.
+- [x] Build the dashboard page with period filters, compact KPI cards, sales summary, invoice table, and chart placeholders.
+- [x] Build invoices, inventory-monitoring, and products-management views using reference-style tables, filters, and actions.
+- [x] Preserve database-backed product data while presenting it through ERP-style inventory and product-management interfaces.
+- [x] Add responsive fallback behavior for narrow screens without compromising the desktop ERP reference layout.
+- [x] Add tests for ERP page navigation and product data rendering.
+- [x] Re-verify the redesigned ERP interface at desktop and mobile breakpoints before saving a new checkpoint.
+- [x] Add interactive dashboard period filters that update the visible dashboard summary state.
+- [x] Add component-level ERP tests for visible-page navigation and product-row rendering.
+- [x] Add an interaction-level ERP navigation test that verifies a quick action changes the visible page state.
+- [x] Replace duplicate financial-value React keys in the reports table with unique row-and-column keys.
+- [x] Add a regression test that renders financial report rows containing repeated values without duplicate keys.
+- [x] Recheck browser console output and save a corrected project checkpoint.
+- [x] Review the supplied reference video and screenshots to map functional ERP modules and flows.
+- [x] Add database-backed ERP user, role, and permission models with safe demo records.
+- [x] Add protected management procedures for users, roles, and permission assignments.
+- [x] Make every top module and right-side quick action open a corresponding visible ERP page or show explicit unavailable feedback.
+- [x] Add a dedicated quick-shortcuts page with searchable categorized actions.
+- [x] Add an Arabic user-management page with add, edit, activation, and role controls.
+- [x] Add an Arabic permission-management dialog with grouped feature toggles per user.
+- [x] Add interaction and permission tests, then recheck desktop/mobile layouts and console output.
+- [x] Save a checkpoint for the functional ERP expansion.
+- [x] Group searchable quick shortcuts into labeled sales, inventory, finance, and settings sections.
+- [x] Add editable user details and a persistent activation/deactivation control to user management.
+- [x] Move grouped per-user permission toggles into an interactive permission-management dialog.
+- [x] Recheck the new ERP pages at a mobile viewport and confirm clean console output.
+- [x] Replace the ERP mobile overflow fallback with a usable stacked small-screen layout for shortcut and user pages.
+- [x] Convert the mobile user-management records view into stacked user cards with directly visible actions.
+- [x] Verify that user edit, activation, and permission controls are accessible without horizontal scrolling on a phone.
+- [x] Verify opened user-edit and permission dialogs at a 375px mobile viewport without horizontal overflow.
+- [x] Analyze the uploaded ERP walkthrough video and document its screens, workflows, and interaction states.
+- [x] Compare the documented walkthrough flows against the current ERP build and list concrete implementation gaps.
+- [ ] Define the complete ERP domain model covering branches, warehouses, inventory movements, parties, invoices, payments, cashboxes, employees, installments, loyalty, and settings.
+- [ ] Create secure role-aware login, logout, and active-user access behavior for ERP accounts.
+- [ ] Build database-backed business settings, branch management, warehouse management, and active branch switching.
+- [ ] Extend products with barcode, pricing tiers, units, reorder levels, expiry metadata, and stock movement support.
+- [ ] Build database-backed customer and supplier records, balances, terms, and credit limits.
+- [ ] Build POS shifts, barcode/search product entry, basket management, discounts, VAT, split payments, and invoice issuance.
+- [ ] Build sales invoice history, printable receipts, invoice lookup, and stock/cash-impacting sales returns.
+- [ ] Build purchase invoices that update inventory, supplier balances, and payment destinations.
+- [ ] Build cashbox, bank, wallet, internal-transfer, statement, and reconciliation workflows.
+- [ ] Build transaction-derived reporting for sales, profitability, tax, cash flow, stock, and branches.
+- [ ] Build employee records, attendance, payroll adjustments, commissions, installments, loyalty, and reminder workflows.
+- [ ] Make every ERP action interactive with deliberate success, validation, error, and authorization feedback.
+- [ ] Add tests for financial invariants, inventory movement, credit enforcement, permissions, and end-to-end sales flows.
+- [x] Evaluate and document the required PWA/local-runtime path for local-network and offline use.
+- [x] Add a dedicated network-and-local-connection ERP page matching the reference-style administrative layout.
+- [x] Show local service status, configured host, LAN address guidance, connection mode, and connected-client list in the network page.
+- [x] Create a portable local-run configuration and startup documentation for a user-hosted ERP instance.
+- [x] Prepare a safe local database configuration template without exposing production credentials.
+- [x] Verify the ERP network page, local-run files, and all project checks before delivery.
+- [x] Track active local ERP clients and display their current sessions in the network page.
+- [x] Display the effective server bind host alongside the configured port and LAN URLs.
+- [ ] Validate the local-run startup path in a local-like configuration before final delivery.
+- [ ] Confirm a user-selected local project folder is available before copying and running the ERP package.
+- [ ] Inspect the connected device for Node.js, pnpm, MySQL, network address, and required project files.
+- [ ] Prepare and run the ERP local instance against a configured local database.
+- [ ] Verify the LAN URL and the connected-client status from the local network page.
+- [ ] Install MariaDB Server locally after user approval and verify its service status.
+- [ ] Create a dedicated local ERP database and least-privilege application user.
+- [ ] Configure local ERP connection values without exposing credentials in source control.
+- [ ] Verify that the user has bound the Desktop ERP-Local folder to this task before local deployment.
+- [ ] Confirm the mounted ERP-Local directory is reachable from the connected desktop before copying files.
