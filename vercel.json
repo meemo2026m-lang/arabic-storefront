@@ -3,18 +3,5 @@
   "version": 2,
   "framework": null,
   "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install --frozen-lockfile",
-  "outputDirectory": "dist/public",
-  "functions": {
-    "api/index.ts": {
-      "maxDuration": 60,
-      "includeFiles": "dist/public/**"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/api/index"
-    }
-  ]
+  "installCommand": "pnpm install --frozen-lockfile"
 }
