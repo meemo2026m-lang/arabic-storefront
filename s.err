@@ -1,0 +1,2 @@
+[OAuth] ERROR: OAUTH_SERVER_URL is not configured! Set OAUTH_SERVER_URL environment variable.
+[Auth] Missing session cookie

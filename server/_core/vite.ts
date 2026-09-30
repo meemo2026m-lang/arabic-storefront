@@ -8,8 +8,12 @@ export async function setupVite(app: Express, server: Server) {
   // Loaded lazily and only in development. Importing Vite (or vite.config.ts)
   // at module scope would pull rollup/esbuild and their platform-native
   // binaries into the production serverless bundle, which fails on Vercel.
-  const { createServer: createViteServer } = await import("vite");
-  const { default: viteConfig } = await import("../../vite.config");
+  // A non-analyzable specifier keeps bundlers from inlining this at build time.
+  const specifier = "vi" + "te";
+  const { createServer: createViteServer } = await import(specifier);
+  const { default: viteConfig } = await import(
+    /* @vite-ignore */ new URL("../../vite.config.ts", import.meta.url).href
+  );
 
   const serverOptions = {
     middlewareMode: true,
