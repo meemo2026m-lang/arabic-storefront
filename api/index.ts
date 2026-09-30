@@ -20,5 +20,8 @@ function getApp(): Promise<Express> {
 
 export default async function handler(req: any, res: any) {
   const app = await getApp();
-  return app(req, res);
+  // Express apps are callable request listeners, but the Express type in this
+  // project resolves to a generic `Application` that TypeScript does not treat
+  // as callable, hence the cast to the Node request listener signature.
+  return (app as unknown as (req: any, res: any) => void)(req, res);
 }

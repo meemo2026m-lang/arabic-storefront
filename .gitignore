@@ -120,3 +120,6 @@ client/public/__manus__/version.json
 local/*.env
 local/secrets*
 
+
+.vercel
+.env*

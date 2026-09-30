@@ -31,7 +31,7 @@ describe("ERP page components", () => {
   it("renders repeated financial values without emitting duplicate-key warnings", () => {
     const consoleError = vi.spyOn(console, "error").mockImplementation(() => undefined);
     render(<Reports />);
-    const duplicateKeyWarning = consoleError.mock.calls.some(([message]) => typeof message === "string" && message.includes("same key"));
+    const duplicateKeyWarning = consoleError.mock.calls.some((call: unknown[]) => typeof call[0] === "string" && (call[0] as string).includes("same key"));
     expect(duplicateKeyWarning).toBe(false);
     consoleError.mockRestore();
   });
