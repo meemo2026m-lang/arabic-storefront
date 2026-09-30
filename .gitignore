@@ -120,6 +120,11 @@ client/public/__manus__/version.json
 local/*.env
 local/secrets*
 
-
+# Vercel local link/state
 .vercel
-.env*
+
+# Secrets: ignore real env files but keep the documented example
+.env
+.env.local
+.env.*.local
+!.env.example
