@@ -3,8 +3,16 @@ NODE_ENV=production
 HOST=0.0.0.0
 PORT=3000
 
-# قاعدة MySQL محلية في الجهاز الرئيسي أو خادم الشبكة.
-DATABASE_URL=mysql://erp_user:CHANGE_THIS_PASSWORD@127.0.0.1:3306/erp_local
+# قاعدة بيانات المتجر: MySQL متوافق.
+# الخيار الموصى به للنشر على Vercel: TiDB Cloud Serverless (طبقة مجانية).
+# انسخ رابط الاتصال من: TiDB Cloud -> Clusters -> Connect -> MySQL
+# صيغته mysql:// ويستخدم المنفذ 4000 افتراضياً.
+DATABASE_URL=mysql://erp_user:CHANGE_THIS_PASSWORD@gateway-01.REGION.prod.aws.tidbcloud.com:4000/erp_local
+
+# TiDB بديل مناسب. بعد ضبط الرابط شغّل: pnpm run db:push
+# ملاحظة: pnpm run db:push ينشئ migration جديداً ثم يطبّق كل المخططات.
+# بعد أول نشر يكفي استخدام: pnpm exec drizzle-kit migrate
+# في TiDB Serverless استخدم المنفذ 3000 (TCP)، لا 4000 (يتطلب TLS).
 
 # أنشئ قيمة عشوائية طويلة وفريدة لكل تثبيت محلي.
 JWT_SECRET=CHANGE_THIS_TO_A_LONG_RANDOM_SECRET
