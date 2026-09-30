@@ -128,3 +128,8 @@ local/secrets*
 .env.local
 .env.*.local
 !.env.example
+
+# local dev/test artifacts
+*.log
+s.err
+s.out
